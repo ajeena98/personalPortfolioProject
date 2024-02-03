@@ -4,13 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link href="css/common.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <header>
-      <h1>Ajeena Portfolio</h1>
+      <nav class="container">
+        <div class="navbar">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu-list">
+            <li class="dropdown">
+              <label for="menu-toggle" class="dropbtn">
+                <img
+                  src="assets/main-menu.png"
+                  alt="Menu Icon"
+                  class="menu-icon-img"
+                />
+              </label>
+              <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="topic.html">Topic</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Hi, I am Ajeena</h1>
     </header>
-    <nav></nav>
-    <footer></footer>
+    <main class="maincontent">
+      <h2>Hello there!</h2>
+      <p>
+        I'm Ajeena Sunny, a passionate web development enthusiast pursuing my
+        studies at Conestoga College. As a dedicated developer, I thrive on
+        transforming ideas into interactive and functional websites. My journey
+        in web development is not just an academic pursuit but a genuine love
+        for crafting digital experiences that leave a lasting impression. With a
+        keen interest in staying abreast of the latest technologies and trends,
+        I am committed to honing my skills and contributing to the ever-evolving
+        world of web development. Let's code the future together!
+      </p>
+      <p>you can find more about me in here.</p>
+      <a href="about.html">MORE ABOUT ME</a>
+    </main>
+    <footer>
+      <div class="line"></div>
+      <a href="mailto: abc@example.com">Send Email</a>
+      <nav>
+        <a href="https://www.linkedin.com/in/ajeena-sunny-9aa858153/"
+          ><img
+            src="assets\linkedin.png"
+            alt="LinkedIn Profile"
+            class="linkedin-icon"
+          />
+        </a>
+        <a href="https://github.com/ajeena98"
+          ><img
+            src="assets\github.png"
+            alt="LinkedIn Profile"
+            class="linkedin-icon"
+          />
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,13 @@
+header{
+    background-image:url(assets/night\ time\ starry\ sky\ background\ 0611.jpg);
+    background-size: 100vw 100vh; /* Cover the entire viewport width and height */
+    background-position: center;
+    height: 600px; 
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        height: 400px;;
+    } 
+    
+}

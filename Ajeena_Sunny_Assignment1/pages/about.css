@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    margin: 0; /* Remove default body margin for full-width content */
+  }
+
+  .aboutclass {
+    text-align: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust as needed */
+  }
+
+  .side-image {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Adjust spacing between image and text */
+    object-fit: cover; /* Ensure the image covers its container */
+  }
+
+  .text-content {
+    max-width: 600px; /* Adjust the maximum width of the text content */
+  }
+
+  .aboutclass h2 {
+    color: white;
+    font-size: 42px;
+  }
+  @media (min-width: 768px) {
+    /* Apply styles for screens wider than 768px */
+    .content-container {
+      flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+    .side-image {
+      margin-bottom: 0; /* Remove spacing between image and text */
+      margin-right: 20px; /* Adjust spacing between image and text */
+      max-width: 50% ;
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 428px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    /* Media query for iPhone 13 */
+    .content-container {
+      flex-direction: column; /* Stack items on iPhone 13 */
+    }
+  }
