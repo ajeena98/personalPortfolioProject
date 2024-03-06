@@ -1,0 +1,62 @@
+body{
+    text-align: center;
+}
+h2{
+color: white;
+text-align: center;
+font-size: 45px;
+}
+.mypicture{
+    width: 50%;
+    height: 550px;
+    object-fit: cover;
+    align-items: center;
+}
+.topiccontent{
+    padding: 0 50px 0 50px;
+}
+
+
+#topicsecond h3{
+    font-size: 36px;
+    color: white;
+}
+
+  
+  .side-by-side-video {
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  
+  @media screen and (min-width: 768px) {
+    .side-by-side-video {
+        max-height: 600px; 
+    }
+  }
+
+
+  .column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    margin: 65px;
+    text-align: left;
+}
+
+.column img {
+    width: 100%;
+    height: 428px;
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+@media (max-width :1500px){
+    .column-container{
+      flex-direction: column;
+    }
+  }

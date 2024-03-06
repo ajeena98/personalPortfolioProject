@@ -1,29 +1,35 @@
 body {
     background-color: black;
-    margin: 0; /* Remove default body margin for full-width content */
+    margin: 0; 
   }
 
+
+  p{
+    font-family: 'Roboto Mono', monospace;
+font-family: 'Source Serif 4', serif;
+  }
   .aboutclass {
-    text-align: center;
+    text-align:center;
   }
 
   .content-container {
     display: flex;
-    flex-direction: column; /* Stack items on small screens */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Adjust as needed */
+    padding: 20px;
   }
 
   .side-image {
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Adjust spacing between image and text */
-    object-fit: cover; /* Ensure the image covers its container */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; 
+    object-fit: cover; 
   }
 
   .text-content {
-    max-width: 600px; /* Adjust the maximum width of the text content */
+    max-width: 600px; 
+    text-align: left;
   }
 
   .aboutclass h2 {
@@ -31,21 +37,115 @@ body {
     font-size: 42px;
   }
   @media (min-width: 768px) {
-    /* Apply styles for screens wider than 768px */
     .content-container {
-      flex-direction: row; /* Side-by-side layout on larger screens */
+      flex-direction: row; 
     }
     .side-image {
-      margin-bottom: 0; /* Remove spacing between image and text */
-      margin-right: 20px; /* Adjust spacing between image and text */
+      margin-bottom: 0; 
+      margin-right: 20px;
       max-width: 50% ;
       height: 600px;
     }
   }
 
   @media (max-width: 428px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
-    /* Media query for iPhone 13 */
+  
     .content-container {
-      flex-direction: column; /* Stack items on iPhone 13 */
+      flex-direction: column; 
     }
   }
+
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  #details-content {
+    max-width: 600px;
+    text-align: left;
+    padding-right: 25px;
+  }
+  
+  .aboutclass h3 {
+    color: white;
+    font-size: 24px;
+  }
+  
+  #details-content p {
+    color: white;
+  }
+  
+  .aboutclass h2 {
+    color: white;
+    font-size: 42px;
+  }
+
+  @media (max-width: 768px) {
+    .row-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .circular-image {
+      margin-right: 0; 
+      margin-bottom: 10px; 
+    }
+  }
+  
+
+
+.educationcontent{
+  padding: 0 115px 0 115px;
+}
+.eduicon{
+  width: 115px;
+}
+.Experience{
+  padding: 0 115px 0 115px;
+}
+.expicon{
+  width: 115px;
+}
+@media (max-width :797PX){
+  .educationcontent{
+    padding: 25PX ;
+  }
+  .Experience{
+    padding: 25PX;
+  }
+}
+form{
+  color: white;
+  width: 88%;
+  margin: auto;
+  box-shadow: 0px 0px 2px #bbb;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-column:15px ;
+}
+label + *{
+  margin-bottom: 15px;
+}
+input[type=submit]{
+  justify-self: start;
+}
